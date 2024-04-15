@@ -1,0 +1,91 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.pp{
+    margin-left: 38px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    
+}
+#contact{
+    margin-top: 100px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+textarea{
+    width: 70%;
+
+}
+input{
+    width: 70%;
+
+    height: 20px;
+
+    margin-bottom: 7px;
+    border: 1px solid black;
+   
+}
+label{
+   
+ 
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+}
+.map{
+    width: 50%;
+    padding-top: ;
+    margin-top: 55px;
+
+}
+.mapp iframe{
+    width: 77%;  
+    height: 345px;
+}
+.btnn{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color{
+    color: rgb(48, 46, 46);
+}
+.btnn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:700px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        width: 60%;
+    }
+    .map{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}

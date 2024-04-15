@@ -1,0 +1,170 @@
+
+
+
+
+
+/* header */
+ .ul-1{
+    list-style: none;
+    background-color: black;
+}
+.dropdown a{
+    list-style: none; 
+    color: black;
+}
+.ul-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul-1 li{
+    display: inline-block;
+    position: relative;
+}
+.dropdown li{
+    display: inline-block;
+    position: relative;
+}
+.ul-1 li a{
+    display: block;
+    /* padding: 20px 25px; */
+    color: #FFF;
+    /* font-size: 20px; */
+    text-decoration: none;
+}
+
+
+.dropdown .li-drop a{
+    display: block;
+    /* padding: 20px 25px; */
+    text-decoration: none;
+    /* color: #FFF; */
+    /* font-size: 20px; */
+
+}
+.ul-1 li  .dropdown{
+ 
+    /* background-color: rgb(196, 183, 183); */
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.ul-1 li a:hover{
+    background-color: rgb(185, 180, 180);
+    
+
+}
+.ul-1 li:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 200px;
+}
+
+.li-drop {
+    padding: 0;
+    margin: 0;
+}
+.A{
+    color: black;
+}
+
+
+
+
+ 
+
+/* é */
+
+* {
+    /* Pour que les tailles soient correctes */
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Pour coller le menu au bord, sans espace */
+    margin: 0;
+  }
+  
+  .menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 100%;
+    /* background-color: red; */
+
+  }
+  
+  main {
+    /* Pour que le texte ne soit pas sous le menu */
+    margin-left: 50px;
+    width: 500px;
+    text-align: justify;
+  }
+  
+  #hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+  }
+  
+  #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: black;
+    width: 100%;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    /* Pour que le menu hamburger soit "rangé" par défaut */
+    transform: translateX(-0%);
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(-100%);
+  }
+  
+  #hamburger-logo,
+  nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #hamburger:checked ~ #hamburger-logo,
+  #hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+  }
+  
+  nav a {
+    /* color: white; */
+    text-decoration: none;
+    /* padding: 10px; */
+  }
+  
+  nav a:hover {
+    background: #444;
+  }
+  #hamburger-logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+@media screen and (max-width:788px) {
+    
+    
+}
